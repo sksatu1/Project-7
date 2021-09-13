@@ -40,7 +40,7 @@ const loadProductDetails = (productId) => {
     .then(data => showProductDetails(data))
 }
 
-// showProductDetails----------------------------------------
+// displayProductDetails----------------------------------------
 const showProductDetails = data => {
   console.log(data);
   const div = document.getElementById("porduct-details");

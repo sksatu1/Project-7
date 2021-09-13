@@ -13,8 +13,9 @@ header h1{
 /*--------------------------------------------------- search section-----------------------------------  */
 form{
   margin:auto;
-  max-width:300px;
-  border:2px solid black;
+  max-width:400px;
+  border: 2px solid blueviolet;
+  border-right: none;
   border-radius:5px;
 }
 
@@ -25,6 +26,7 @@ form.example input[type=text] {
   float: left;
   width: 70%;
   background: #f1f1f1;
+  outline: none;
 }
 
 form.example button {
@@ -35,6 +37,7 @@ form.example button {
   color: white;
   font-size: 17px;
   border: 1px solid grey;
+  border-radius: 5px;
   border-left: none;
   cursor: pointer;
 }
@@ -50,33 +53,6 @@ form.example::after {
   clear: both;
   display: table;
 }
-
-
-/* .search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
-  margin-right: 30px;
-}
-.search-field:hover {
-  outline: none;
-  border: none;
-}
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
-  text-align: center;
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-} */
 
 /*---------------------------------------display products section------------------------------------------- */
 
@@ -94,7 +70,6 @@ form.example::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
