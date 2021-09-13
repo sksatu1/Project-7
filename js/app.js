@@ -24,7 +24,7 @@ const showProducts = (products) => {
       <button onclick="loadProductDetails(${product.id})" id="details-btn" class="btn btn-danger">Details</button>
       <br>
       <br>
-      <p>avarage rating : ${product.rating.rate}</p>
+      <p>average rating : ${product.rating.rate}</p>
       <p>Total reviews : ${product.rating.count}</p>
       </div>
       `;
