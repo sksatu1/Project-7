@@ -2,6 +2,15 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+header{
+ text-align: center;
+}
+header h1{
+  color: rgb(250, 9, 9);
+  font-weight: 700;
+}
+
+/*--------------------------------------------------- search section-----------------------------------  */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -25,6 +34,19 @@ body {
   border-radius: 25px;
   margin-left: 20px;
 }
+
+/*---------------------------------------display products section------------------------------------------- */
+
+/* ---------------------------------- display single product details------------------------------------- */
+#porduct-details{
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+/*-------------------------------------- display all products -------------------------------------------- */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
