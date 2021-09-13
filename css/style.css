@@ -11,11 +11,53 @@ header h1{
 }
 
 /*--------------------------------------------------- search section-----------------------------------  */
-.search-field {
+form{
+  margin:auto;
+  max-width:300px;
+  border:2px solid black;
+  border-radius:5px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  background: #2195f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+  color: blanchedalmond;
+  font-weight: 700;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* .search-field {
   border: none;
   border-radius: 50px;
   padding: 5px;
   outline: none;
+  margin-right: 30px;
 }
 .search-field:hover {
   outline: none;
@@ -28,12 +70,13 @@ header h1{
   margin: auto;
   margin-top: 50px;
   border-right: none;
+  text-align: center;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 20px;
-}
+} */
 
 /*---------------------------------------display products section------------------------------------------- */
 
