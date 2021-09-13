@@ -25,7 +25,7 @@ const showProducts = (products) => {
       <br>
       <br>
       <p>average rating : ${product.rating.rate}</p>
-      <p>Total reviews : ${product.rating.count}</p>
+      <p>Total rating : ${product.rating.count}</p>
       </div>
       `;
     document.getElementById("all-products").appendChild(div);
