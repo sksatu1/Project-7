@@ -24,13 +24,52 @@ const showProducts = (products) => {
       <button onclick="loadProductDetails(${product.id})" id="details-btn" class="btn btn-danger">Details</button>
       <br>
       <br>
-      <p>average rating : ${product.rating.rate}</p>
-      <p>Total rating : ${product.rating.count}</p>
+      <p class='rating'>average rating : (${product.rating.rate}) <span id='${product.id}'></span></p>
+      <p class='rating'>Total rating : ${product.rating.count}</p>
       </div>
       `;
     document.getElementById("all-products").appendChild(div);
+    showRating(product.id, product.rating.rate);
   }
 };
+
+// show star rating
+const showRating = (id, stars) => {
+  const rating = document.getElementById(id);
+  if (stars === 0) {
+    rating.innerHTML = `<i class="far<i class="far fa-star"></i> fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 0) {
+    rating.innerHTML = `<i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 0.8) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 1.3) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 1.8) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 2.3) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 2.8) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 3.3) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 3.8) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>`
+  }
+  if (stars > 4.3) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>`
+  }
+  if (stars === 5) {
+    rating.innerHTML = `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`
+  }
+}
 
 // load single products details ------------------------------
 const loadProductDetails = (productId) => {

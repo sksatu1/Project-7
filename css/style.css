@@ -81,6 +81,10 @@ form.example::after {
   border-radius: 5px;
 }
 
+.rating{
+  color: #d9534f;;
+}
+
 .single-product {
   padding: 10px;
   height: 100%;
